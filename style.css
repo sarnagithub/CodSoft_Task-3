@@ -1,0 +1,238 @@
+ /* Reset and base styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h2{
+    font-size: 2.6rem;
+    font-style: italic;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+#about img{
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    border: solid #e8491d 5px ;
+    box-shadow: 0px 0px 500px  rgb(255, 255, 255);
+}
+
+/* Header Styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url('https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff4f4;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* About */
+#about {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+    border: #e8491d solid;
+}
+
+#about h2 {
+    color: #e8491d;
+}
+
+#about img {
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Skills */
+#skills {
+    padding: 15px;
+    background: #ffffff;
+}
+
+#skills h2 {
+    color: #35424a;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    float: inline-start;
+    padding: 15px;
+    text-align: center;
+    border: #000000 solid 2px;
+    margin: 5px;
+    border-radius: 20px;
+    background: linear-gradient(180deg,white,rgb(166, 166, 255));
+}
+
+/* Projects */
+#projects {
+    padding: 15px;
+    background: #7a7e8d99;
+}
+
+#projects h2 {
+    color: #35424a;
+}
+
+.project {
+    background: #35424a;
+    color: #ffffff;
+    border: solid #e8491d 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+    display: flexbox;
+}
+
+.project img {
+    float: start;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: solid #000000;
+    box-shadow: 0px 0px 500px  rgba(255, 255, 255, 0.622);
+    width: 80%;
+    height: auto;
+}
+
+/* Resume */
+#resume {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    border: #e8491d solid;
+}
+
+#resume a {
+    display: inline-block;
+    color: #ffffff;
+    background: #e8491d;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Contact */
+#contact {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background: #a3a3a3;
+    font-weight: 700;
+}
+
+#contact h2 {
+    color: #1b2328;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #about img {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+}
